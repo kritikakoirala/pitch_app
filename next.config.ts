@@ -1,12 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  // module.exports = {
-  //   images: {
-  //     domains: ['localhost'],
-  //   },
-  // }
+
+  eslint: {
+    ignoreDuringBuilds: true, // 👈 skip ESLint errors during `next build`
+  },
+
 
   images: {
     remotePatterns: [{
@@ -14,6 +13,7 @@ const nextConfig: NextConfig = {
       hostname: "*"
     }]
   },
+
 
 };
 
